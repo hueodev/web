@@ -1,0 +1,41 @@
+{
+    "name": "Hugo",
+    "title": "Student Webdevloper",
+    "image": "http://avatars.githubusercontent.com/u/78303660?v=4",
+    "projects": [
+        {
+            "title": "webbsite",
+            "tags": ["Svelte", "SCSS"],
+            "desc": "The current version of my personal website.",
+            "url": "http://github.com/ogooooo"
+        },
+        {
+            "title": "linktree-clone",
+            "tags": ["Svelte", "Tailwind CSS"],
+            "desc": "A Linktree Clone with my own design made with Svelte and Tailwind CSS",
+            "url": "https://ogooo.dev/linktree" 
+        },
+        {
+            "title": "vscode-theme-webbsite",
+            "tags": ["Svelte", "Tailwind CSS"],
+            "desc": "A Portfolio webbsite inspired by vscode design",
+            "url": "http://github.com/ogooooo"
+        },
+        {
+            "title": "svelte-template",
+            "tags": ["Svelte", "Tailwind CSS", "Vite"],
+            "desc": "A emplate I made to make my life easier.",
+            "url": "http://github.com/ogooooo"
+        }
+    ],
+    "links": [
+        {
+            "name": "Email",
+            "url": "mailto:hi@ogooo.dev"
+        },
+        {
+            "name": "Github",
+            "url": "http://github.com/ogooooo"
+        }
+    ]
+}
