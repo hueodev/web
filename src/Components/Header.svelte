@@ -16,7 +16,7 @@
     position: relative;
     display: flex;
     margin: auto;
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 3.6rem 2rem 2rem 2rem;
     max-width: 45rem;    
 }
 
@@ -41,6 +41,7 @@
 
 @media (max-width: 668px) {
     .container {
+        margin-top: -1.6rem;
         flex-direction: column-reverse;
         text-align: left;
     }
