@@ -1,5 +1,8 @@
 <script>
-    import data from "../data.json";
+    let links = [
+		{ name: "Email", url: "mailto:hi@ogooo.dev" }, 
+		{ name: 'Github', urk: "http://github.com/ogooooo" }
+	];
 </script>
 
 <div class="container">
@@ -8,7 +11,7 @@
         <p>If you'd like to collab on a small project or just want to say hello, feel free to send me an email. You can also contact me on discord Ogooo#7072</p>
     </div>
     <div class="tags">
-        {#each data.links as link}
+        {#each links as link}
             <p><a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a></p>
         {/each}
     </div>
@@ -18,7 +21,7 @@
 .container {
     position: relative;
     margin: auto;
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 2.6rem 2rem 2rem 2rem;
     max-width: 45rem;  
 }
 

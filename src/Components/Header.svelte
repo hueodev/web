@@ -1,14 +1,10 @@
-<script>
-  import data from "../data.json";
-</script>
-
 <div class="container">
     <div class="text">
-        <h1>{data.name}</h1>
-        <p>{data.title}</p>
+        <h1>Hugo</h1>
+        <p>Student Webdevloper</p>
         <p>A self-taught Web Developer / Designer from Sweden who loves to create beautiful and functional websites and applications that deliver a great user experience. When I'm not busy with projects or schoolwork, I usually watch movies.</p>
     </div>
-    <img class="logo" src={data.image} height="160" width="160" alt="">
+    <img class="logo" src="http://avatars.githubusercontent.com/u/78303660?v=4" height="160" width="160" alt="">
 </div>
 
 <style lang="scss">
@@ -16,7 +12,7 @@
     position: relative;
     display: flex;
     margin: auto;
-    padding: 3.6rem 2rem 2rem 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     max-width: 45rem;    
 }
 

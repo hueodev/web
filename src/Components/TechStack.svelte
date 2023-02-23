@@ -34,6 +34,7 @@
         display: grid;
         grid-template-columns: auto auto;
         align-items: center;
+        margin: .2rem 0rem 0rem;
         p {
             display: flex;
             align-items: center;
