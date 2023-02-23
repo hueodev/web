@@ -6,7 +6,7 @@
     <div class="text">
         <h1>{data.name}</h1>
         <p>{data.title}</p>
-        <p>A self taught Web Developer / Designer from Sweden i am experienced in Svelte, Tailwind CSS, JavaScript, Typescript, SASS and HTML + CSS. Hit me up if you want a website or just want to ask a question.</p>
+        <p>A self-taught Web Developer / Designer from Sweden who loves to create beautiful and functional websites and applications that deliver a great user experience. When I'm not busy with projects or schoolwork, I usually watch movies.</p>
     </div>
     <img class="logo" src={data.image} height="160" width="160" alt="">
 </div>
@@ -24,8 +24,7 @@
     text-align: left;
     margin-right: 1.6rem;
     h1 {
-        font-size: 36px;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.6rem;
     }
     p {
         font-size: 20px;

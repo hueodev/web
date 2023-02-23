@@ -1,12 +1,14 @@
 <script>
   import Header from "./Components/Header.svelte";
-  import Projects from "./Components/Projects.svelte";
+  // import Projects from "./Components/Projects.svelte";
+  import TechStack from "./Components/TechStack.svelte";
   import Contact from "./Components/Contact.svelte";
 </script>
 
 <main>
   <Header/>
-  <Projects/>
+  <!-- <Projects/> -->
+  <TechStack/>
   <Contact/>
 </main>
 

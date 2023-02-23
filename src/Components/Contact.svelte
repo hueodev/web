@@ -26,7 +26,6 @@
     text-align: left;
     text-decoration: none;
     h1 {
-        font-size: 36px;
         margin-bottom: 0.4rem;
         color: rgb(255, 255, 255);
     }
