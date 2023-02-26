@@ -1,10 +1,17 @@
+<script>
+    let name = "Hugo"
+    let title = "Student Webdevloper"
+    let desc = "A self-taught Web Developer / Designer from Sweden who loves to create beautiful and functional websites and applications that deliver a great user experience. When I'm not busy with projects or schoolwork, I usually watch movies."
+    let logo = "http://avatars.githubusercontent.com/u/78303660?v=4"
+</script>
+
 <div class="container">
     <div class="text">
-        <h1>Hugo</h1>
-        <p>Student Webdevloper</p>
-        <p>A self-taught Web Developer / Designer from Sweden who loves to create beautiful and functional websites and applications that deliver a great user experience. When I'm not busy with projects or schoolwork, I usually watch movies.</p>
+        <h1>{name}</h1>
+        <p>{title}</p>
+        <p>{desc}</p>
     </div>
-    <img class="logo" src="http://avatars.githubusercontent.com/u/78303660?v=4" height="160" width="160" alt="">
+    <img class="logo" src={logo} height="160" width="160" alt="">
 </div>
 
 <style lang="scss">
@@ -12,7 +19,7 @@
     position: relative;
     display: flex;
     margin: auto;
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 3.4rem 2rem 2rem 2rem;
     max-width: 45rem;    
 }
 

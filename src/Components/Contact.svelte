@@ -1,7 +1,7 @@
 <script>
     let links = [
 		{ name: "Email", url: "mailto:hi@ogooo.dev" }, 
-		{ name: 'Github', urk: "http://github.com/ogooooo" }
+		{ name: 'Github', url: "http://github.com/ogooooo" }
 	];
 </script>
 
@@ -12,7 +12,7 @@
     </div>
     <div class="tags">
         {#each links as link}
-            <p><a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a></p>
+            <a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a>
         {/each}
     </div>
 </div>
@@ -21,7 +21,7 @@
 .container {
     position: relative;
     margin: auto;
-    padding: 2.6rem 2rem 2rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     max-width: 45rem;  
 }
 
@@ -42,26 +42,24 @@
 .tags {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     margin: 1rem 0rem 1rem 0rem;
-    p {
+    a {
         max-width: 40rem;
         padding: .4rem 0rem;
         text-align: center;
         font-size: 20px;
         border-radius: .6rem;
-        background: #1d1d20;
+        background: rgb(29, 29, 32);
         border-radius: 6px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
         border: 2px solid rgb(33, 33, 37);
         transition: 400ms ease-in-out;
         &:hover {
             border: 2px solid rgb(42, 77, 136);
             transform: scale(1.02);
         }
-    }
-    a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
     }
 }
 
