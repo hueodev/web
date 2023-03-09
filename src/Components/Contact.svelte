@@ -1,15 +1,22 @@
 <script>
-    import data from "../data.json";
+    import { tooltip } from 'svooltip';
+	import 'svooltip/styles.css';
+
+    let links = [
+		{ name: "Email", tooltip:"hi@ogooo.dev", url: "mailto:hi@ogooo.dev" }, 
+		{ name: "Github", tooltip:"Ogooooo", url: "http://github.com/ogooooo" },
+        { name: "Discord", tooltip:"Ogooo#7072", url: "" }
+	];
 </script>
 
 <div class="container">
     <div class="text">
         <h1>Get in Touch</h1>
-        <p>If you'd like to collab on a small project or just want to say hello, feel free to send me an email. You can also contact me on discord Ogooo#7072</p>
+        <p>If you'd like to collab on a small project or just want to say hello, feel free to send me an email.</p>
     </div>
     <div class="tags">
-        {#each data.links as link}
-            <p><a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a></p>
+        {#each links as link}
+            <a href={link.url} target="_blank" rel="noopener noreferrer" use:tooltip={{content: link.tooltip, placement: "bottom", offset: 12, html: true}}>{link.name}</a>
         {/each}
     </div>
 </div>
@@ -26,7 +33,6 @@
     text-align: left;
     text-decoration: none;
     h1 {
-        font-size: 36px;
         margin-bottom: 0.4rem;
         color: rgb(255, 255, 255);
     }
@@ -39,27 +45,25 @@
 
 .tags {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
+    gap: .6rem;
+    grid-template-columns: auto auto auto;
     margin: 1rem 0rem 1rem 0rem;
-    p {
+    a {
         max-width: 40rem;
         padding: .4rem 0rem;
         text-align: center;
         font-size: 20px;
         border-radius: .6rem;
-        background: #1d1d20;
+        background: rgb(29, 29, 32);
         border-radius: 6px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
         border: 2px solid rgb(33, 33, 37);
         transition: 400ms ease-in-out;
         &:hover {
             border: 2px solid rgb(42, 77, 136);
-            transform: scale(1.02);
+            // transform: scale(1.02);
         }
-    }
-    a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
     }
 }
 

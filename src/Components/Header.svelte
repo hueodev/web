@@ -1,14 +1,17 @@
 <script>
-  import data from "../data.json";
+    let name = "Hugo"
+    let title = "Student Webdevloper"
+    let desc = "A self-taught Web Developer / Designer from Sweden who loves to create beautiful and functional websites and applications that deliver a great user experience. To get in touch click "
+    let logo = "http://avatars.githubusercontent.com/u/78303660?v=4"
 </script>
 
 <div class="container">
     <div class="text">
-        <h1>{data.name}</h1>
-        <p>{data.title}</p>
-        <p>A self taught Web Developer / Designer from Sweden i am experienced in Svelte, Tailwind CSS, JavaScript, Typescript, SASS and HTML + CSS. Hit me up if you want a website or just want to ask a question.</p>
+        <h1>{name}</h1>
+        <p>{title}</p>
+        <p>{desc}<a href="mailto:hi@ogooo.dev">Here</a></p>
     </div>
-    <img class="logo" src={data.image} height="160" width="160" alt="">
+    <img class="logo" src={logo} height="160" width="160" alt="">
 </div>
 
 <style lang="scss">
@@ -16,7 +19,7 @@
     position: relative;
     display: flex;
     margin: auto;
-    padding: 3.6rem 2rem 2rem 2rem;
+    padding: 6rem 2rem 3rem 2rem;
     max-width: 45rem;    
 }
 
@@ -24,24 +27,27 @@
     text-align: left;
     margin-right: 1.6rem;
     h1 {
-        font-size: 36px;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0rem;
     }
     p {
-        font-size: 20px;
-        margin-bottom: 0.6rem;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
         color: rgb(212, 212, 216);
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
     }
 }
 
 .logo {
-    border-radius: 100px;
-    margin: 1.2rem 0rem;
+    border-radius: 3rem;
+    margin: 1rem 0rem 0rem;
 }
 
 @media (max-width: 668px) {
     .container {
-        margin-top: -1.6rem;
+        margin-top: -3.2rem;
         flex-direction: column-reverse;
         text-align: left;
     }
