@@ -26,9 +26,6 @@
 .text {
     text-align: left;
     margin-right: 1.6rem;
-    h1 {
-        margin-bottom: 0rem;
-    }
     p {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;

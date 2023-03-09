@@ -25,7 +25,7 @@
 .container {
     position: relative;
     margin: auto;
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     max-width: 45rem;  
 }
 
