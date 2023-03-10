@@ -19,8 +19,8 @@
     position: relative;
     display: flex;
     margin: auto;
-    padding: 6rem 2rem 3rem 2rem;
-    max-width: 45rem;    
+    padding: 6rem 2rem 1.8rem 2rem;
+    max-width: 45rem; 
 }
 
 .text {
@@ -29,6 +29,7 @@
     p {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;
+        font-weight: 500;
         color: rgb(212, 212, 216);
         a {
             color: #fff;

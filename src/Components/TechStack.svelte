@@ -36,11 +36,11 @@
         padding: 0rem 2rem;
         p {
             color: #D4D4D8;
-            font-size: 20px;
+            font-size: 1.25rem;
+            font-weight: 500;
             padding: .4rem 0rem;
         }
     }
-
     .box {
         position: relative;
         display: grid;
@@ -50,8 +50,9 @@
         p {
             display: flex;
             align-items: center;
+            font-weight: 500;
             padding: 1rem 1rem;
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         span {
             display: flex;   
@@ -67,7 +68,6 @@
             height: 1.3rem;
         }
     }
-
     @media (max-width: 668px) {
         .box {
             grid-template-columns: 1fr;
