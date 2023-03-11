@@ -1,8 +1,8 @@
 <script>
     let name = "Hugo"
     let title = "Student Webdevloper"
-    let desc = "A self-taught Web Developer / Designer from Sweden who loves to create beautiful and functional websites and applications that deliver a great user experience. To get in touch click "
-    let logo = "http://avatars.githubusercontent.com/u/78303660?v=4"
+    let desc = "A self-taught Web Developer / Designer from Sweden who loves to create beautiful and functional websites and applications that deliver a great user experience. To get in touch with me click "
+    let logo = "https://avatars.githubusercontent.com/u/78303660?v=4"
 </script>
 
 <div class="container">
@@ -40,7 +40,7 @@
 
 .logo {
     border-radius: 3rem;
-    margin: 1rem 0rem 0rem;
+    margin: 1.8rem 0rem 0rem;
 }
 
 @media (max-width: 668px) {
