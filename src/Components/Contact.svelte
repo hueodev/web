@@ -18,7 +18,7 @@
     </div>
     <div class="tags">
         {#each links as link}
-            <a href={link.url} target="_blank" rel="noopener noreferrer" use:tooltip={{content: link.tooltip, placement: "bottom", offset: 12, html: true}}>{link.name}</a>
+            <a href={link.url} rel="noopener noreferrer" use:tooltip={{content: link.tooltip, placement: "bottom", offset: 12, html: true}}>{link.name}</a>
         {/each}
     </div>
 </div>
