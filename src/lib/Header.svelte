@@ -39,7 +39,7 @@
 }
 
 .logo {
-    border-radius: 3rem;
+    border-radius: 2rem;
     margin: 1.8rem 0rem 0rem;
 }
 

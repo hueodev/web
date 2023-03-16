@@ -1,8 +1,8 @@
 <script>
-  import Status from "./Components/Status.svelte";
-  import Header from "./Components/Header.svelte";
-  import TechStack from "./Components/TechStack.svelte";
-  import Contact from "./Components/Contact.svelte";
+  import Status from "./lib/Status.svelte";
+  import Header from "./lib/Header.svelte";
+  import TechStack from "./lib/TechStack.svelte";
+  import Contact from "./lib/Contact.svelte";
 </script>
 
 <main>
