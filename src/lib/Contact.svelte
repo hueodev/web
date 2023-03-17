@@ -17,7 +17,7 @@
     </div>
     <div class="tags">
         {#each links as { name, tip, url }}
-            <a href={url} rel="noopener noreferrer"><Tooltip tip={tip}><p>{name}</p></Tooltip></a>
+            <Tooltip tip={tip}><a href={url} rel="noopener noreferrer">{name}</a></Tooltip>
         {/each}
     </div>
 </div>
@@ -48,21 +48,19 @@
 .tags {
     display: grid;
     gap: .6rem;
-    grid-template-columns: auto auto auto;
-    margin: 1rem 0rem 1rem 0rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem 0rem;
     a {
-        max-width: 45rem;
+        display: flex;
         padding: .4rem 0rem;
         text-align: center;
-        font-size: 1.25rem;
         font-weight: 500;
-        border-radius: .6rem;
-        background: rgb(29, 29, 32);
-        border-radius: .2rem;
+        font-size: 1.25rem;
         text-decoration: none;
+        border-radius: .6rem;
         color: rgb(226, 225, 225);
+        background: rgb(29, 29, 32);
         border: 2px solid rgb(33, 33, 37);
-        transition: 400ms ease-in-out;
         &:hover {
             background: rgb(39, 39, 42);
         }
@@ -71,6 +69,5 @@
         grid-template-columns: 1fr;
     }
 }
-
 
 </style>
