@@ -1,13 +1,12 @@
 <script>
-    import { tooltip } from 'svooltip';
-	import 'svooltip/styles.css';
+    import Tooltip from "./Tooltip.svelte";
 
     let title = "Get in Touch"
     let desc = "If you'd like to collab on a small project or just want to say hello, feel free to send me an email."
     let links = [
-		{ name: "Email", tooltip:"hi@ogooo.dev", url: "mailto:hi@ogooo.dev" }, 
-		{ name: "Github", tooltip:"Ogooooo", url: "http://github.com/ogooooo" },
-        { name: "Discord", tooltip:"Ogooo#7072", url: "#" }
+		{ name: "Email", tip:"hi@ogooo.dev", url: "mailto:hi@ogooo.dev" }, 
+		{ name: "Github", tip:"Ogooooo", url: "http://github.com/ogooooo" },
+        { name: "Discord", tip:"Ogooo#7072", url: "#" }
 	];
 </script>
 
@@ -17,8 +16,8 @@
         <p>{desc}</p>
     </div>
     <div class="tags">
-        {#each links as link}
-            <a href={link.url} rel="noopener noreferrer" use:tooltip={{content: link.tooltip, placement: "bottom", offset: 12, html: true}}>{link.name}</a>
+        {#each links as { name, tip, url }}
+            <a href={url} rel="noopener noreferrer"><Tooltip tip={tip}><p>{name}</p></Tooltip></a>
         {/each}
     </div>
 </div>
