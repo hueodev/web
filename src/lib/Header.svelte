@@ -19,8 +19,13 @@
     position: relative;
     display: flex;
     margin: auto;
-    padding: 6rem 2rem 1.8rem 2rem;
+    padding: 5.5rem 2rem 1.8rem 2rem;
     max-width: 45rem; 
+    @media (max-width: 668px) {
+        margin-top: -3.2rem;
+        flex-direction: column-reverse;
+        text-align: left;
+    }
 }
 
 .text {
@@ -41,15 +46,7 @@
 .logo {
     border-radius: 2rem;
     margin: 1.8rem 0rem 0rem;
-}
-
-@media (max-width: 668px) {
-    .container {
-        margin-top: -3.2rem;
-        flex-direction: column-reverse;
-        text-align: left;
-    }
-    .logo {
+    @media (max-width: 668px) {
         margin-bottom: 1.6rem;
     }
 }

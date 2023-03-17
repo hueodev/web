@@ -68,11 +68,10 @@
             background: rgb(39, 39, 42);
         }
     }
-}
-
-@media (max-width: 668px) {
-    .tags {
+    @media (max-width: 668px) {
         grid-template-columns: 1fr;
     }
 }
+
+
 </style>

@@ -29,52 +29,50 @@
 </div>
 
 <style lang="scss">
-    .container {
-        position: relative;
-        max-width: 45rem;
-        margin: auto;
-        padding: 0rem 2rem;
-        p {
-            color: #D4D4D8;
-            font-size: 1.25rem;
-            font-weight: 500;
-            padding: .4rem 0rem;
-        }
+.container {
+    position: relative;
+    max-width: 45rem;
+    margin: auto;
+    padding: 0rem 2rem;
+    p {
+        color: #D4D4D8;
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: .4rem 0rem;
     }
-    .box {
-        position: relative;
-        display: grid;
+}
+.box {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    margin: .2rem 0rem;
+    p {
+        display: flex;
         align-items: center;
-        grid-template-columns: auto auto auto;
-        margin: .2rem 0rem;
-        p {
-            display: flex;
-            align-items: center;
-            font-weight: 500;
-            padding: 1rem 1rem;
-            font-size: 1.25rem;
-        }
-        span {
-            display: flex;   
-            justify-content: center;
-            background: #27272a;
-            padding: .8rem;
-            margin: 0rem .8rem 0rem;
-            border-radius: 10rem;
-        }
-        svg {
-            filter: grayscale(100%);
-            width: 1.3rem;
-            height: 1.3rem;
-        }
+        font-weight: 500;
+        padding: 1rem 1rem;
+        font-size: 1.25rem;
+    }
+    span {
+        display: flex;   
+        justify-content: center;
+        background: #27272a;
+        padding: .8rem;
+        margin: 0rem .8rem 0rem;
+        border-radius: 10rem;
+    }
+    svg {
+        filter: grayscale(100%);
+        width: 1.3rem;
+        height: 1.3rem;
     }
     @media (max-width: 668px) {
-        .box {
-            grid-template-columns: 1fr;
-            margin: 1rem 0rem;
-            p {
-                padding: 1rem 0rem;
-            }
+        grid-template-columns: 1fr;
+        margin: 1rem 0rem;
+        p {
+            padding: 1rem 0rem;
         }
     }
+}
 </style>
