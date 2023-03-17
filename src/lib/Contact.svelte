@@ -47,17 +47,17 @@
 
 .tags {
     display: grid;
-    gap: .6rem;
+    gap: .8rem;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 1rem 0rem;
+    margin: 1rem 0rem .8rem;
     a {
         display: flex;
+        justify-content: center;
         padding: .4rem 0rem;
-        text-align: center;
         font-weight: 500;
         font-size: 1.25rem;
         text-decoration: none;
-        border-radius: .6rem;
+        border-radius: .2rem;
         color: rgb(226, 225, 225);
         background: rgb(29, 29, 32);
         border: 2px solid rgb(33, 33, 37);

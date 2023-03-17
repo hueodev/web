@@ -44,7 +44,7 @@ p {
     padding: .5rem 1.9rem .5rem 1.4rem;
     width: 45rem;
     border: 2px solid rgb(33, 33, 37);
-    border-radius: .3rem;
+    border-radius: .2rem;
 }
 
 svg {
