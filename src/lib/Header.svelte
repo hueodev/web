@@ -44,7 +44,7 @@
 }
 
 .logo {
-    border-radius: 2rem;
+    border-radius: 100%;
     margin: 1.8rem 0rem 0rem;
     @media (max-width: 668px) {
         margin-bottom: 1.6rem;
