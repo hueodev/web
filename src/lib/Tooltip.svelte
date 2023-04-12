@@ -30,7 +30,7 @@
 		&:hover .tooltip {
 			opacity: 1;
 			visibility: initial;
-			margin-top: -.6rem;
+			margin-top: -.3rem;
 		}
 	}
 
@@ -47,7 +47,7 @@
 		transform: translate(-50%, -120%);
 		padding: 0.18rem 0.5rem;
 		border-radius: 4px;
-		border: 1px solid rgb(33, 33, 37);
+		border: 2px solid rgb(33, 33, 37);
 		background: rgb(39, 39, 42);
 		color: rgb(255, 255, 255);
 		font-size: 0.94rem;
