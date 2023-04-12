@@ -1,4 +1,6 @@
 <script>
+    import Tooltip from "./Tooltip.svelte";
+
     let name = "Hugo"
     let title = "Student Webdevloper"
     let desc = "A self-taught Web Developer / Designer from Sweden who loves to create beautiful and functional websites and applications that deliver a great user experience. To get in touch with me click "
@@ -9,7 +11,7 @@
     <div class="text">
         <h1>{name}</h1>
         <p>{title}</p>
-        <p>{desc}<a href="mailto:hi@ogooo.dev">Here</a></p>
+        <p>{desc}<Tooltip tip="Email"><a href="mailto:hi@ogooo.dev">Here</a></Tooltip></p>
     </div>
     <img class="logo" src={logo} height="160" width="160" alt="">
 </div>
