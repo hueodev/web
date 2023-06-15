@@ -7,13 +7,12 @@ async function fetchPresence() {
    const res = await fetch("https://api.lanyard.rest/v1/users/420661585007083520");
    if (res.ok) {
       userPresence = await res.json();
-    //   console.log(userPresence);
    }
 }
 
 onMount(() => {
    fetchPresence();
-   setInterval(fetchPresence, 1000);
+   setInterval(fetchPresence, 10000);
 });
 </script>
 
@@ -22,9 +21,11 @@ onMount(() => {
 		<span class="online">Currently Online</span>
 	{:else if userPresence.data.discord_status === "offline"}
 		<span class="offline">Currently Offline</span>
-	{:else}
-		<p>Loading...</p>
 	{/if}
+{/if}
+
+{#if !userPresence.data}
+	<span>Loading...</span>
 {/if}
 
 <style lang="scss">
@@ -33,29 +34,25 @@ onMount(() => {
 		color: whitesmoke;
 	}
 
-	.online {
-		&::after {
-			content: "";
-			display: inline-block;
-			vertical-align: middle;
-			margin: 0 0 0 0.3rem;
-			height: 0.6rem;
-			width: 0.6rem;
-			border-radius: 100%;
-			background-color: rgb(80, 163, 97);
-		}
+	.online::after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 0 0 0.3rem;
+		height: 0.6rem;
+		width: 0.6rem;
+		border-radius: 100%;
+		background-color: rgb(80, 163, 97);
 	}
 
-	.offline {
-		&::after {
-			content: "";
-			display: inline-block;
-			vertical-align: middle;
-			margin: 0 0 0 0.3rem;
-			height: 0.6rem;
-			width: 0.6rem;
-			border-radius: 100%;
-			background-color: rgb(129, 132, 141);
-		}
+	.offline::after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 0 0 0.3rem;
+		height: 0.6rem;
+		width: 0.6rem;
+		border-radius: 100%;
+		background-color: rgb(129, 132, 141);
 	}
 </style>
