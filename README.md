@@ -1,5 +1,5 @@
 # Personal Webbsite
-![mockup](https://i.imgur.com/JQbUhkn.png)
+![mockup](https://i.imgur.com/EjZvZbu.png)
 
 This is the current version of my personal webbsite. Made with SvelteKit and SCSS 
 
