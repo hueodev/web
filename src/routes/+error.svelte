@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	$: status = $page.status;
+	let status = $page.status;
 </script>
 
 <div class="container">

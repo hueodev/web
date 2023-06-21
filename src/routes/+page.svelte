@@ -1,4 +1,5 @@
 <script>
+    import "../styles/global.scss";
     import Header from "../components/Header.svelte";
     import Info from "../components/Info.svelte";
     import Links from "../components/Links.svelte";
