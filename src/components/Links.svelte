@@ -9,7 +9,7 @@
 
 <style lang="scss">
     .container {
-        max-width: 28rem;
+        max-width: 31rem;
         margin: 2.5rem auto;
     }
 

@@ -28,7 +28,7 @@ function getGreeting() {
         display: grid;
         gap: 2.5rem;
         margin: 2rem auto;
-        max-width: 28rem;
+        max-width: 31rem;
     } 
 
     h1 {
