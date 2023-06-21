@@ -18,7 +18,7 @@
         display: flex;
         gap: 2rem;
         margin: auto;
-        max-width: 31rem;
+        max-width: 28rem;
     }
 
     img {

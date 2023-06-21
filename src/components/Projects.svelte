@@ -38,7 +38,7 @@
 <style lang="scss">
     .container {
         position: relative;
-        max-width: 31rem;
+        max-width: 28rem;
         margin: auto;
     }
 
@@ -94,8 +94,12 @@
         margin-right: .3rem;
 	}
 
+    .icons {
+        font-size: .95rem;
+    }
+
     span {
-        font-size: 1rem;
+        font-size: .9rem;
         padding: .2rem .4rem;
         width: max-content;
         border-radius: .2rem;
