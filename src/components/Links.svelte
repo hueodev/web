@@ -10,7 +10,7 @@
 <style lang="scss">
     .container {
         max-width: 28rem;
-        margin: 2.5rem auto;
+        margin: 2rem auto;
     }
 
     .links {

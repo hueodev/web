@@ -26,7 +26,7 @@ function getGreeting() {
 <style lang="scss">
     .container {
         display: grid;
-        gap: 2.5rem;
+        gap: 2rem;
         margin: 2rem auto;
         max-width: 28rem;
     } 
