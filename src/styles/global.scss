@@ -18,3 +18,12 @@ body {
     background-color: $bg;
     color: $text;
 }
+
+// Scrollbar
+:root {
+    color-scheme: dark;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
