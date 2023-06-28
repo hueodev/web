@@ -19,7 +19,7 @@ function getGreeting() {
     </div>
     <div class="work">
         <h1>Work Experience</h1>
-        <p>I have been working on some small projects but if you want something done just contact me.</p>
+        <p>I have been involved in numerous projects both small and large. If you would like to contact me please feel free to reach out via email or send me a message on discord.</p>
     </div>
 </div>
 
