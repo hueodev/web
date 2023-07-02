@@ -1,47 +1,56 @@
 <script>
-function getGreeting() {
-   const hour = new Date().getHours();
+  function getGreeting() {
+    const hour = new Date().getHours();
 
-   if (hour >= 0 && hour < 12) {
+    if (hour >= 0 && hour < 12) {
       return "Good Morning,";
-   } else if (hour >= 12 && hour < 18) {
+    } else if (hour >= 12 && hour < 18) {
       return "Good Afternoon,";
-   } else {
+    } else {
       return "Good Evening,";
-   }
-}
+    }
+  }
 </script>
 
 <div class="container">
-    <div class="about">
-        <h1>About</h1>
-        <p><span>{getGreeting()}</span> Im Hugo. I enjoy buildning dynamic and creative webbsites from start to finnish. I aim to approach every problem with a fresh out-of-the-box perspective. Hoping to get better and improve what i do, wish me luck!</p>    
-    </div>
-    <div class="work">
-        <h1>Work Experience</h1>
-        <p>I have been involved in numerous projects both small and large. If you would like to contact me please feel free to reach out via email or send me a message on discord.</p>
-    </div>
+  <div class="about">
+    <h1>About</h1>
+    <p>
+      <span>{getGreeting()}</span> Im Hugo. I enjoy buildning dynamic and creative
+      webbsites from start to finnish. I aim to approach every problem with a fresh
+      out-of-the-box perspective. Hoping to get better and improve what i do, wish
+      me luck!
+    </p>
+  </div>
+  <div class="work">
+    <h1>Work Experience</h1>
+    <p>
+      I have been involved in numerous projects both small and large. If you
+      would like to contact me please feel free to reach out via email or send
+      me a message on discord.
+    </p>
+  </div>
 </div>
 
 <style lang="scss">
-    .container {
-        display: grid;
-        gap: 2rem;
-        margin: 2rem auto;
-        max-width: 28rem;
-    } 
+  .container {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 28rem;
+  }
 
-    h1 {
-        font-size: 1rem;
-        font-weight: 500;
-    }
+  h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-    p {
-        font-size: 1rem;
-        color: rgb(163, 163, 163);
-    }
+  p {
+    font-size: 1rem;
+    color: rgb(163, 163, 163);
+  }
 
-    span {
-        color: #4b84b6;
-    }
+  span {
+    color: #4b84b6;
+  }
 </style>

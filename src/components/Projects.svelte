@@ -1,108 +1,108 @@
 <script>
-    import { onMount } from "svelte";
+  import { onMount } from "svelte";
 
-    let repos;
+  let repos;
 
-    onMount(async () => {
-        const response = await fetch("https://gh-pinned-repos.egoist.dev/?username=hueodev");
-        repos = await response.json();
-    });
+  onMount(async () => {
+    const response = await fetch("https://gh-pinned-repos.egoist.dev/?username=hueodev");
+    repos = await response.json();
+  });
 </script>
 
 <div class="container">
-    <h1>Projects</h1>
-    <div class="grid">
-    {#if repos}
-        {#each repos as { link, owner, repo, description, languageColor, language, stars, forks }}
-            <a href={link}>
-                <h4>{repo}</h4>
-                <p>{description}</p>
-                <div class="info">
-                    <span>{language}</span>
-                    {#if stars}
-                        <span class="icons"><img src="icons/star.svg" alt="icon"/>{stars}</span>
-                    {/if}
-                    {#if forks}
-                        <span class="icons"><img src="icons/fork.svg" alt="icon"/>{forks}</span>
-                    {/if}
-                </div>
-            </a>
-        {/each}
-    {/if}
-    {#if !repos}
-        <p>Loading...</p>
-    {/if}
-    </div>
+  <h1>Projects</h1>
+  <div class="grid">
+  {#if repos}
+      {#each repos as { link, owner, repo, description, languageColor, language, stars, forks }}
+          <a href={link}>
+              <h4>{repo}</h4>
+              <p>{description}</p>
+              <div class="info">
+                  <span>{language}</span>
+                  {#if stars}
+                      <span class="icons"><img src="icons/star.svg" alt="icon"/>{stars}</span>
+                  {/if}
+                  {#if forks}
+                      <span class="icons"><img src="icons/fork.svg" alt="icon"/>{forks}</span>
+                  {/if}
+              </div>
+          </a>
+      {/each}
+  {/if}
+  {#if !repos}
+      <p>Loading...</p>
+  {/if}
+  </div>
 </div>
 
 <style lang="scss">
-    .container {
-        position: relative;
-        max-width: 28rem;
-        margin: auto;
-    }
+  .container {
+    position: relative;
+    max-width: 28rem;
+    margin: auto;
+  }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: .6rem;
-    }
-    
-    h1 {
-        font-size: 1rem;
-        font-weight: 500;
-        margin: 0 0 .5rem 0;
-    }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.6rem;
+  }
 
-    h4 {
-        font-size: 1rem;
-        font-weight: 500; 
-    }
+  h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 0.5rem 0;
+  }
 
-    p {
-        font-size: 1rem;
-        color: rgb(128, 128, 128);
-        margin: .2rem 0 .6rem;
-    }
+  h4 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-    a {
-        display: flex;
-        flex-direction: column;
-        color: rgb(210, 213, 218);
-        background:rgb(19, 19, 20);
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        border: 1px solid #1b1b1c;
-        transition: all 250ms;
-        padding: .9rem;
-        border-radius: .2rem;
-        line-height: 1.4rem;
-        text-decoration: none;
-        cursor: pointer;
-        &:hover {
-            background: rgb(24, 24, 25);
-        }
-    }
+  p {
+    font-size: 1rem;
+    color: rgb(128, 128, 128);
+    margin: 0.2rem 0 0.6rem;
+  }
 
-    .info {
-        display: flex;
-        gap: .4rem;
-        margin-top: auto;
+  a {
+    display: flex;
+    flex-direction: column;
+    color: rgb(210, 213, 218);
+    background: rgb(19, 19, 20);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid #1b1b1c;
+    transition: all 250ms;
+    padding: 0.9rem;
+    border-radius: 0.2rem;
+    line-height: 1.4rem;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      background: rgb(24, 24, 25);
     }
+  }
 
-	img {
-		height: .8rem;
-        margin-right: .3rem;
-	}
+  .info {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: auto;
+  }
 
-    .icons {
-        font-size: .95rem;
-    }
+  img {
+    height: 0.8rem;
+    margin-right: 0.3rem;
+  }
 
-    span {
-        font-size: .9rem;
-        padding: .2rem .4rem;
-        width: max-content;
-        border-radius: .2rem;
-        background: rgba(39, 39, 42, 0.387)    
-    }
+  .icons {
+    font-size: 0.95rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+    width: max-content;
+    border-radius: 0.2rem;
+    background: rgba(39, 39, 42, 0.387);
+  }
 </style>

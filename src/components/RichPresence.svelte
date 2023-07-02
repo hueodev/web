@@ -1,19 +1,19 @@
 <script>
-import { onMount } from "svelte";
+  import { onMount } from "svelte";
 
-let userPresence = {};
+  let userPresence = {};
 
-async function fetchPresence() {
-   const res = await fetch("https://api.lanyard.rest/v1/users/420661585007083520");
-   if (res.ok) {
+  async function fetchPresence() {
+    const res = await fetch("https://api.lanyard.rest/v1/users/420661585007083520");
+    if (res.ok) {
       userPresence = await res.json();
-   }
-}
+    }
+  }
 
-onMount(() => {
-   fetchPresence();
-   setInterval(fetchPresence, 10000);
-});
+  onMount(() => {
+    fetchPresence();
+    setInterval(fetchPresence, 10000);
+  });
 </script>
 
 {#if userPresence.data}
@@ -29,30 +29,30 @@ onMount(() => {
 {/if}
 
 <style lang="scss">
-	span {
-		font-size: 0.94rem;
-		color: whitesmoke;
-	}
+  span {
+    font-size: 0.94rem;
+    color: whitesmoke;
+  }
 
-	.online::after {
-		content: "";
-		display: inline-block;
-		vertical-align: middle;
-		margin: 0 0 0 0.3rem;
-		height: 0.6rem;
-		width: 0.6rem;
-		border-radius: 100%;
-		background-color: rgb(80, 163, 97);
-	}
+  .online::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 0.3rem;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 100%;
+    background-color: rgb(80, 163, 97);
+  }
 
-	.offline::after {
-		content: "";
-		display: inline-block;
-		vertical-align: middle;
-		margin: 0 0 0 0.3rem;
-		height: 0.6rem;
-		width: 0.6rem;
-		border-radius: 100%;
-		background-color: rgb(129, 132, 141);
-	}
+  .offline::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 0.3rem;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 100%;
+    background-color: rgb(129, 132, 141);
+  }
 </style>
