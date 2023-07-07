@@ -25,7 +25,7 @@
 {/if}
 
 {#if !userPresence.data}
-	<span>Currently Loading</span>
+	<span>Currently Loading</span><img src="icons/spinner.svg" alt="">
 {/if}
 
 <style lang="scss">
@@ -54,5 +54,11 @@
     width: 0.6rem;
     border-radius: 100%;
     background-color: rgb(129, 132, 141);
+  }
+
+  img {
+    margin-left: .4rem;
+    vertical-align: middle;
+    display: inline-block;
   }
 </style>

@@ -31,7 +31,7 @@
   {/if}
   {#if !repos}
       <div class="loading">
-        <span>Loading</span>
+        <span>Loading</span><img src="icons/spinner.svg" alt="">
       </div>
   {/if}
   </div>
@@ -88,6 +88,8 @@
     img {
       height: 0.9rem;
       margin-right: 0.3rem;
+      vertical-align: middle;
+      display: inline-block;
     }
     span {
       font-size: 0.9rem;
