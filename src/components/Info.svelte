@@ -51,6 +51,6 @@
   }
 
   span {
-    color: #4b84b6;
+    color: rgb(75, 132, 182);
   }
 </style>

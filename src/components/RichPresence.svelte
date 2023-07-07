@@ -25,7 +25,7 @@
 {/if}
 
 {#if !userPresence.data}
-	<span>Loading...</span>
+	<span>Currently Loading</span>
 {/if}
 
 <style lang="scss">

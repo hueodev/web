@@ -11,7 +11,6 @@
   <meta property="og:description" content="Webdeveloper" />
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/78303660?v=4">
   <meta content="#202225" name="theme-color" />
-  <title>Home</title>
 </svelte:head>
 
 <main>
