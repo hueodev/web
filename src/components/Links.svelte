@@ -1,9 +1,9 @@
 <div class="container">
   <h1>Links</h1>
   <div class="links">
-      <p>Github</p><a href="https://github.com/hueodev" target="_blank">@hueodev</a>
-      <p>Discord</p><a href="https://discordapp.com/users/420661585007083520" target="_blank">@hueo</a>
-      <p>Email</p><a href="mailto:hello@hueo.dev" target="_blank">@hueo</a>
+    <p>Github</p><a href="https://github.com/hueodev" target="_blank">@hueodev</a>
+    <p>Discord</p><a href="https://discordapp.com/users/420661585007083520" target="_blank">@hueo</a>
+    <p>Email</p><a href="mailto:hello@hueo.dev" target="_blank">@hueo</a>
   </div>
 </div>
 
@@ -33,9 +33,9 @@
       font-weight: 500;
       transition: all 250ms;
       width: fit-content;
-      &:hover {
-        color: rgb(149, 152, 157);
+        &:hover {
+          color: rgb(149, 152, 157);
+      }
     }
-  }
   }
 </style>

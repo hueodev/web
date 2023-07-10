@@ -3,6 +3,7 @@
   import Info from "../components/Info.svelte";
   import Projects from "../components/Projects.svelte";
   import Links from "../components/Links.svelte";
+  import Source from "../components/Source.svelte";
 </script>
 
 <svelte:head>
@@ -14,4 +15,5 @@
   <Info />
   <Projects />
   <Links />
+  <Source />
 </main>
