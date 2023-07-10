@@ -18,7 +18,7 @@
 
 <style lang="scss">
   .container {
-    height: calc(100vh - 70px);
+    height: calc(85vh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
