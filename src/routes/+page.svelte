@@ -2,8 +2,8 @@
   import Header from "../components/Header.svelte";
   import Info from "../components/Info.svelte";
   import Projects from "../components/Projects.svelte";
-  import Links from "../components/Links.svelte";
-  import Source from "../components/Source.svelte";
+  import Contact from "../components/Contact.svelte";
+  import Footer from "../components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -14,6 +14,6 @@
   <Header />
   <Info />
   <Projects />
-  <Links />
-  <Source />
+  <Contact />
+  <Footer />
 </main>

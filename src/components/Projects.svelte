@@ -10,7 +10,7 @@
 </script>
 
 <div class="container">
-  <h1>Projects</h1>
+  <h1>Featured Work</h1>
   <div class="repos">
   {#if repos}
       {#each repos as { link, owner, repo, description, languageColor, language, stars, forks }}
