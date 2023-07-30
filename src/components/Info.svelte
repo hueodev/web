@@ -17,7 +17,7 @@
     <h1>About</h1>
     <p>
       <span>{getGreeting()}</span> Im Hugo. I enjoy buildning dynamic and creative
-      webbsites from start to finnish. I aim to approach every problem with a fresh
+      webbsites from start to finish. I aim to approach every problem with a fresh
       out-of-the-box perspective. Hoping to get better and improve what i do, wish
       me luck!
     </p>
