@@ -17,10 +17,12 @@
 </script>
 
 {#if userPresence.data}
-	{#if userPresence.data.discord_status === "online" || userPresence.data.discord_status === "dnd" || userPresence.data.discord_status === "idle"}
+	{#if userPresence.data.discord_status === "online" || userPresence.data.discord_status === "dnd"}
 		<span class="online">Currently Online</span>
 	{:else if userPresence.data.discord_status === "offline"}
 		<span class="offline">Currently Offline</span>
+  {:else if userPresence.data.discord_status === "idle"}
+		<span class="idle">Currently Away</span>
 	{/if}
 {/if}
 
@@ -54,6 +56,17 @@
     width: 0.6rem;
     border-radius: 100%;
     background-color: rgb(129, 132, 141);
+  }
+
+  .idle::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 0.3rem;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 100%;
+    background-color: rgb(240, 178, 50);
   }
 
   img {
