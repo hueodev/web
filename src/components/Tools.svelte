@@ -20,7 +20,7 @@
     <div class="content-tools">
       <a href="https://github.com" target="_blank">Github</a>
       <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>
-      <a href="https://cpanel.net" target="_blank">CPanel</a>
+      <a href="https://vercel.com" target="_blank">Vercel</a>
       <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a>
     </div>
   </div>
