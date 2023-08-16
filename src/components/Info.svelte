@@ -2,7 +2,7 @@
   function getGreeting() {
     const hour = new Date().getHours();
 
-    if (hour >= 0 && hour < 12) { 
+    if (hour >= 0 && hour < 12) {
       return "Good Morning,";
     } else if (hour >= 12 && hour < 18) {
       return "Good Afternoon,";
@@ -16,18 +16,17 @@
   <div class="content-about">
     <h1>About</h1>
     <p>
-      <span>{getGreeting()}</span> Im Hugo. I enjoy buildning dynamic and creative
-      webbsites from start to finish. I aim to approach every problem with a fresh
-      out-of-the-box perspective. Hoping to get better and improve what i do, wish
-      me luck!
+      <span>{getGreeting()}</span> I'm Hugo. I enjoy building dynamic and creative
+      websites from start to finish. I aim to approach every problem with a fresh
+      out-of-the-box perspective. Hoping to get better and improve what I do.
     </p>
   </div>
   <div class="content-work">
     <h1>Work Experience</h1>
     <p>
-      I have been involved in numerous projects both small and large. If you
-      would like to contact me please feel free to reach out via email or send
-      me a message on discord.
+      I have been involved in numerous projects, both big and small. If you
+      would like to reach out to me, please feel free to contact me via email or
+      Discord.
     </p>
   </div>
 </div>
