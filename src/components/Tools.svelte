@@ -6,12 +6,12 @@
       <a href="https://" target="_blank">CSS / HTML</a>
       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>
       <a href="https://developer.mozilla.org/en-US/docs/Glossary/SQL" target="_blank">SQL</a>
+      <a href="https://go.dev/" target="_blank">Golang</a>
       <a href="https://sass-lang.com" target="_blank">SCSS</a>
     </div>
     <h1>Frameworks</h1>
     <div class="content-frame">
       <a href="https://svelte.dev" target="_blank">Svelte.js</a>
-      <a href="https://kit.svelte.dev" target="_blank">SvelteKit.js</a>
       <a href="https://nodejs.org" target="_blank">Node.js</a>
       <a href="https://www.prisma.io" target="_blank">Prisma</a>
       <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>
@@ -20,7 +20,7 @@
     <div class="content-tools">
       <a href="https://github.com" target="_blank">Github</a>
       <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>
-      <a href="https://vercel.com" target="_blank">Vercel</a>
+      <a href="https://pnpm.io/" target="_blank">PNPM</a>
       <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a>
     </div>
   </div>

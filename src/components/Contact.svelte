@@ -3,7 +3,7 @@
   <div class="content-links">
     <p>Github</p><a href="https://github.com/hueodev" target="_blank">@hueodev</a>
     <p>Discord</p><a href="https://discordapp.com/users/420661585007083520" target="_blank">@hueo</a>
-    <p>Email</p><a href="mailto:hello@hueo.dev" target="_blank">@hueo</a>
+    <p>Email</p><a href="/">@hueo</a>
   </div>
 </div>
 
