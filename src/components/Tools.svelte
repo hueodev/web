@@ -4,7 +4,7 @@
     <h1>Languages</h1>
     <div class="content-lang">
       <a href="https://" target="_blank">CSS / HTML</a>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
       <a href="https://developer.mozilla.org/en-US/docs/Glossary/SQL" target="_blank">SQL</a>
       <a href="https://go.dev/" target="_blank">Golang</a>
       <a href="https://sass-lang.com" target="_blank">SCSS</a>
