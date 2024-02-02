@@ -7,7 +7,7 @@
     <img src="/img.png" alt="" />
     <div class="info">
       <h1>Hugo</h1>
-      <p>Self taught Developer</p>
+      <p>Student</p>
       <RichPresence />
     </div>
   </div>
