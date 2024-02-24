@@ -16,17 +16,18 @@
   <div class="content-about">
     <h1>About</h1>
     <p>
-      <span>{getGreeting()}</span> I'm Hugo. I enjoy building dynamic and creative
-      websites from start to finish. I aim to approach every problem with a fresh
+      <span>{getGreeting()}</span> I'm Hugo. I enjoy building creative and innovative
+      software from start to finish. I aim to approach every problem with a fresh
       out-of-the-box perspective. Hoping to get better and improve what I do.
     </p>
   </div>
   <div class="content-work">
-    <h1>Work Experience</h1>
+    <h1>Experience</h1>
     <p>
-      I have been involved in numerous projects, both big and small. If you
-      would like to reach out to me, please feel free to contact me via email or
-      Discord.
+      I have been involved in numerous projects, both big and small, where I
+      mostly use Go. Additionally, I am currently expanding my skills by
+      learning C. If you would like to reach out to me, please feel free to
+      contact me via Email or Discord.
     </p>
   </div>
 </div>
